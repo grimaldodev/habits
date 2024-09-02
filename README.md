@@ -20,17 +20,39 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Requirements
 
-To learn more about Next.js, take a look at the following resources:
+**Objective:** Develop a habit tracker app where users can create, manage, and track their daily habits. The app should provide a simple interface for adding habits, marking them as complete, and viewing progress over time.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Requirements:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Home Screen:
 
-## Deploy on Vercel
+Display a list of all active habits with the current streak (number of consecutive days the habit has been completed).
+Include a button to add a new habit.
+Add Habit Screen:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Allow users to create a new habit by entering a habit name, selecting a frequency (daily, weekly, etc.), and choosing a start date.
+Include validation to ensure that the habit name is not empty.
+Habit Detail Screen:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Show detailed information about the habit, including its creation date, frequency, and current streak.
+Allow users to mark the habit as completed for the current day.
+Progress Visualization:
+
+Include a simple chart or calendar view that shows the user’s progress for each habit over the past 30 days.
+Highlight the days when the habit was completed.
+Notifications:
+
+Implement a simple notification system that reminds users to complete their habits at a set time each day.
+State Management:
+
+Use React’s context API or a state management library (like Redux) to manage the application's state, especially for storing habits and tracking completion.
+Constraints:
+
+Emphasize clean, maintainable code with comments explaining key parts.
+Candidates should use in-app data storage (e.g., AsyncStorage or local storage) to persist habit data between sessions.
+Submission:
+
+Include instructions on how to run the app locally.
+
